@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="es-MX" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balajú | Pan de la casa, café y cocina en Texcoco y Chiconcuac</title>
+  <meta name="description" content="Balajú: pan dulce hecho en casa, desayunos, comidas y cenas para compartir. Texcoco Centro y Chiconcuac, abiertos todos los días.">
+  <meta name="theme-color" content="#1b1489">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Balajú | Sabores que cuentan historias">
+  <meta property="og:description" content="Pan de la casa, café y cocina en Texcoco y Chiconcuac.">
+  <meta property="og:image" content="assets/img/hero-manana-1400.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Activa los estados iniciales de animación solo si hay JS; si main.js no arranca, todo se muestra.
+    document.documentElement.classList.replace("no-js", "js");
+    setTimeout(function () { if (!window.balajuReady) document.documentElement.classList.remove("js"); }, 3000);
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "name": "Balajú Texcoco Centro",
+        "brand": "Balajú",
+        "slogan": "Sabores que cuentan historias",
+        "servesCuisine": ["Panadería", "Cafetería", "Desayunos", "Mexicana"],
+        "telephone": "+52 56 6989 6409",
+        "image": "assets/img/hero-manana-1400.webp",
+        "address": { "@type": "PostalAddress", "streetAddress": "C. Allende 306, Centro", "addressLocality": "Texcoco de Mora", "addressRegion": "Estado de México", "postalCode": "56100", "addressCountry": "MX" },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "22:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:30", "closes": "22:00" }
+        ],
+        "sameAs": ["https://www.instagram.com/restaurantebalaju/", "https://www.facebook.com/share/1T2kDCbrsv/"]
+      },
+      {
+        "@type": "Restaurant",
+        "name": "Balajú Chiconcuac",
+        "brand": "Balajú",
+        "telephone": "+52 56 6989 6409",
+        "address": { "@type": "PostalAddress", "streetAddress": "Prol. Hidalgo Sur 347, San Cristóbal", "addressLocality": "Chiconcuac", "addressRegion": "Estado de México", "postalCode": "56280", "addressCountry": "MX" },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "22:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:30", "closes": "22:00" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#inicio" aria-label="Balajú, inicio">
+        <img src="assets/coyote-azucar.png" alt="" width="28" height="38">
+        <span>Balajú</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#menu">Menú</a>
+        <a href="#la-casa">La casa</a>
+        <a href="#sucursales">Sucursales</a>
+        <a href="#domicilio">A domicilio</a>
+        <a class="btn btn-rosa nav-cta" href="#sucursales">Cómo llegar</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-controls="nav" aria-expanded="false">
+        <span class="sr-only">Abrir menú</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ================= HERO: un día en Balajú ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-intro">
+        <h1 id="hero-title" class="split">Pan de la casa, café y cocina, de la mañana a la noche.</h1>
+        <div class="hero-side">
+          <p class="status" id="openStatus" aria-live="polite">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-text">Abiertos todos los días</span>
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-rosa" href="#sucursales">Cómo llegar</a>
+            <a class="btn btn-line" href="https://wa.me/525669896409?text=Hola%20Balaj%C3%BA" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="day" id="day">
+          <article class="moment open" data-moment="manana">
+            <img class="moment-img" src="assets/img/hero-manana-1400.webp" srcset="assets/img/hero-manana-700.webp 700w, assets/img/hero-manana-1400.webp 1400w" sizes="(max-width: 760px) 100vw, 60vw" alt="Croissants, roles y pan danés de Balajú sobre papel con el logo del coyote" width="1400" height="1865" fetchpriority="high">
+            <h2 class="moment-head">
+              <button type="button" class="moment-toggle" aria-expanded="true" aria-controls="m-manana">
+                <span class="moment-name">Mañana</span>
+                <span class="moment-now" hidden>Ahora</span>
+              </button>
+            </h2>
+            <div class="moment-body" id="m-manana">
+              <p class="moment-lead">Pan recién horneado y café.</p>
+              <ul>
+                <li>Concha de vainilla</li>
+                <li>Croissant de chocolate con café</li>
+                <li>Capuchino</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="moment" data-moment="tarde">
+            <img class="moment-img" src="assets/img/hero-tarde-1400.webp" srcset="assets/img/hero-tarde-700.webp 700w, assets/img/hero-tarde-1400.webp 1400w" sizes="(max-width: 760px) 100vw, 60vw" alt="Platillo de pollo en salsa con arroz y quesadillas en sartén" width="1400" height="1865" loading="lazy">
+            <h2 class="moment-head">
+              <button type="button" class="moment-toggle" aria-expanded="false" aria-controls="m-tarde">
+                <span class="moment-name">Tarde</span>
+                <span class="moment-now" hidden>Ahora</span>
+              </button>
+            </h2>
+            <div class="moment-body" id="m-tarde">
+              <p class="moment-lead">Comida para quedarse un rato.</p>
+              <ul>
+                <li>Molletes de cochinita pibil</li>
+                <li>Rib eye a la vuelta y vuelta</li>
+                <li>Fusilli al pesto</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="moment" data-moment="noche">
+            <img class="moment-img" src="assets/img/hero-noche-1400.webp" srcset="assets/img/hero-noche-700.webp 700w, assets/img/hero-noche-1400.webp 1400w" sizes="(max-width: 760px) 100vw, 60vw" alt="Aperol spritz, cocteles y cerveza sobre una mesa de madera" width="1400" height="1865" loading="lazy">
+            <h2 class="moment-head">
+              <button type="button" class="moment-toggle" aria-expanded="false" aria-controls="m-noche">
+                <span class="moment-name">Noche</span>
+                <span class="moment-now" hidden>Ahora</span>
+              </button>
+            </h2>
+            <div class="moment-body" id="m-noche">
+              <p class="moment-lead">Una copa y algo para compartir.</p>
+              <ul>
+                <li>Aperol spritz</li>
+                <li>Cantarito</li>
+                <li>Piña colada con ron mexicano</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="ribbon" aria-hidden="true">
+        <div class="ribbon-track">
+          <span class="rb"><img src="assets/img/t-conchas.webp" alt="" width="96" height="96">Conchas</span>
+          <span class="rb"><img src="assets/img/t-croissants.webp" alt="" width="96" height="96">Croissants</span>
+          <span class="rb"><img src="assets/img/t-capuchino.webp" alt="" width="96" height="96">Capuchino</span>
+          <span class="rb"><img src="assets/img/t-molletes.webp" alt="" width="96" height="96">Molletes</span>
+          <span class="rb"><img src="assets/img/t-hotcakes.webp" alt="" width="96" height="96">Hot cakes</span>
+          <span class="rb"><img src="assets/img/t-ribeye.webp" alt="" width="96" height="96">Rib eye</span>
+          <span class="rb"><img src="assets/img/t-fusilli.webp" alt="" width="96" height="96">Fusilli al pesto</span>
+          <span class="rb"><img src="assets/img/t-cheesecake.webp" alt="" width="96" height="96">Cheesecake vasco</span>
+          <span class="rb"><img src="assets/img/t-malteadas.webp" alt="" width="96" height="96">Malteadas</span>
+          <span class="rb"><img src="assets/img/t-cantarito.webp" alt="" width="96" height="96">Cantaritos</span>
+          <span class="rb"><img src="assets/img/t-spritz.webp" alt="" width="96" height="96">Aperol spritz</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LA CASA ================= -->
+    <section class="casa" id="la-casa" aria-labelledby="casa-title">
+      <div class="wrap casa-grid">
+        <div class="casa-text">
+          <h2 id="casa-title" class="split">El pan se hace aquí.</h2>
+          <p data-reveal="up">En la cocina de Balajú amasamos, formamos y horneamos el pan que llega a tu mesa: conchas, croissants y roles todo el año, y en temporada, rosca de reyes y pan de muerto.</p>
+          <p data-reveal="up">Alrededor del pan está lo demás: café, desayunos, comidas y cenas para compartir, en Texcoco Centro y en Chiconcuac.</p>
+        </div>
+
+        <figure class="ph ph-equipo" data-reveal="clip">
+          <div class="ph-frame"><img src="assets/img/casa-equipo-1400.webp" srcset="assets/img/casa-equipo-700.webp 700w, assets/img/casa-equipo-1400.webp 1400w" sizes="(max-width: 760px) 100vw, 55vw" alt="Tres integrantes del equipo de panadería de Balajú con mandil, frente a un mural de bordado otomí" width="1400" height="1865" loading="lazy"></div>
+        </figure>
+
+        <figure class="ph ph-amasado" data-reveal="clip">
+          <div class="ph-frame"><img src="assets/img/casa-amasado-700.webp" alt="Panadero de Balajú amasando sobre la mesa enharinada" width="700" height="932" loading="lazy"></div>
+          <figcaption>Amasado a mano.</figcaption>
+        </figure>
+
+        <figure class="ph ph-muerto" data-reveal="clip">
+          <div class="ph-frame"><img src="assets/img/casa-pan-muerto-700.webp" alt="Charola de pan de muerto recién horneado" width="700" height="932" loading="lazy"></div>
+          <figcaption>Pan de muerto, recién salido del horno.</figcaption>
+        </figure>
+
+        <figure class="ph ph-conchas" data-reveal="clip">
+          <div class="ph-frame"><img src="assets/img/casa-conchas-1400.webp" srcset="assets/img/casa-conchas-700.webp 700w, assets/img/casa-conchas-1400.webp 1400w" sizes="(max-width: 760px) 100vw, 45vw" alt="Conchas de chocolate y de vainilla en una canasta" width="1400" height="1051" loading="lazy"></div>
+          <figcaption>Conchas de chocolate y vainilla.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= MENÚ ================= -->
+    <section class="menu" id="menu" aria-labelledby="menu-title" data-reveal="menu">
+      <div class="wrap">
+        <div class="menu-head">
+          <h2 id="menu-title" class="split">Menú</h2>
+          <p data-reveal="up">Una muestra de lo que encontrarás. Pregunta en sucursal por el pan del día y los platillos de temporada.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Categorías del menú">
+          <button type="button" role="tab" id="t-pan" aria-controls="p-pan" aria-selected="true">Panadería</button>
+          <button type="button" role="tab" id="t-pas" aria-controls="p-pas" aria-selected="false" tabindex="-1">Pastelería</button>
+          <button type="button" role="tab" id="t-des" aria-controls="p-des" aria-selected="false" tabindex="-1">Desayunos</button>
+          <button type="button" role="tab" id="t-com" aria-controls="p-com" aria-selected="false" tabindex="-1">Comidas</button>
+          <button type="button" role="tab" id="t-beb" aria-controls="p-beb" aria-selected="false" tabindex="-1">Bebidas</button>
+          <span class="tab-ink" aria-hidden="true"></span>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p-pan" aria-labelledby="t-pan">
+          <img src="assets/img/menu-panaderia-700.webp" alt="Croissants y pan danés con el coyote de Balajú estampado en azúcar" width="700" height="875" loading="lazy">
+          <ul class="dishes">
+            <li><h3>Concha de vainilla</h3><p>Suave, con su costra crujiente de siempre.</p></li>
+            <li><h3>Croissant natural</h3><p>Hojaldrado y dorado.</p></li>
+            <li><h3>Croissant de chocolate con café</h3><p>Relleno de chocolate con un toque de café.</p></li>
+            <li><h3>Roll de canela</h3><p>Con glaseado.</p></li>
+            <li><h3>Cruffin de chocolate y maracuyá</h3><p>Hojaldre en forma de panqué, relleno.</p></li>
+            <li><h3>Rollo de ricotta con guayaba</h3><p>Hojaldre con queso ricotta y guayaba.</p></li>
+            <li><h3>Trenza de frambuesa</h3><p>Con mascarpone y frutos rojos.</p></li>
+            <li><h3>Pan suizo</h3><p>Relleno de crema pastelera y chocolate.</p></li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p-pas" aria-labelledby="t-pas" hidden>
+          <img src="assets/img/menu-pasteleria-700.webp" alt="Cheesecake vasco con galleta Lotus" width="700" height="525" loading="lazy">
+          <ul class="dishes">
+            <li><h3>Cheesecake vasco Lotus</h3><p>Centro cremoso y bordes tostados.</p></li>
+            <li><h3>Cheesecake de frutos rojos</h3><p>Base de galleta y coulis de frutos rojos.</p></li>
+            <li><h3>Tiramisú</h3><p>Soletas con café, mousse de mascarpone y cocoa.</p></li>
+            <li><h3>Tarta de chocolate con frambuesa</h3><p>Chocolate intenso y frambuesa.</p></li>
+            <li><h3>Mousse de limón</h3><p>Sobre galleta, con gelatina de frambuesa.</p></li>
+            <li><h3>Pastel de zanahoria</h3><p>Dos capas, con betún.</p></li>
+            <li><h3>Red velvet</h3><p>El clásico.</p></li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p-des" aria-labelledby="t-des" hidden>
+          <img src="assets/img/menu-desayunos-700.webp" alt="Hot cakes con mantequilla, crema batida, plátano y frutos rojos" width="700" height="525" loading="lazy">
+          <ul class="dishes">
+            <li><h3>Hot cakes</h3><p>Con fruta, frutos rojos y crema batida.</p></li>
+            <li><h3>Molletes de cochinita pibil</h3><p>Frijoles, queso gratinado, cochinita, cebolla morada y pico de gallo.</p></li>
+            <li><h3>Mollete sencillo</h3><p>Frijoles, queso gratinado y pico de gallo.</p></li>
+            <li><h3>Omelette de espinaca y quesillo</h3><p>Con frijoles.</p></li>
+            <li><h3>Bagel de salmón</h3><p>Queso crema, salmón ahumado y vegetales.</p></li>
+            <li><h3>Chapata de quesos</h3><p>Tres quesos y jitomate.</p></li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p-com" aria-labelledby="t-com" hidden>
+          <img src="assets/img/menu-comidas-700.webp" alt="Platillo en salsa con arroz, servido en sartén de hierro" width="700" height="932" loading="lazy">
+          <ul class="dishes">
+            <li><h3>Rib eye a la vuelta y vuelta</h3><p>Con mantequilla de hierbas.</p></li>
+            <li><h3>Diezmillo en su caldo</h3><p>Servido en plato hondo, con su caldo.</p></li>
+            <li><h3>Hamburguesa de arrachera</h3><p>Con papas a la francesa.</p></li>
+            <li><h3>Fusilli al pesto</h3><p>Pechuga de pollo, albahaca y queso.</p></li>
+            <li><h3>Chapata de cochinita pibil</h3><p>Cebolla morada y frijoles refritos.</p></li>
+            <li><h3>Baguette de arrachera</h3><p>Con queso manchego fundido.</p></li>
+            <li><h3>Club sándwich</h3><p>Pollo, jamón, tocino, queso y vegetales.</p></li>
+            <li><h3>Ensalada de salmón</h3><p>Salmón a la plancha, lechuga, jitomate y aguacate.</p></li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="p-beb" aria-labelledby="t-beb" hidden>
+          <img src="assets/img/menu-bebidas-700.webp" alt="Cuatro malteadas con crema batida" width="700" height="932" loading="lazy">
+          <ul class="dishes">
+            <li><h3>Café americano</h3><p>Doble shot.</p></li>
+            <li><h3>Capuchino</h3><p>Natural, de vainilla o de caramelo.</p></li>
+            <li><h3>Chai latte y matcha latte</h3><p>Con leche espumada.</p></li>
+            <li><h3>Malteadas</h3><p>Con crema batida.</p></li>
+            <li><h3>Soda italiana</h3><p>Mango o frambuesa, con perlas de fresa.</p></li>
+            <li><h3>Cantarito</h3><p>Servido en jarro de barro.</p></li>
+            <li><h3>Mojito de frutos rojos</h3><p>Fresco y frutal.</p></li>
+            <li><h3>Piña colada con ron mexicano</h3><p>Cremosa y fría.</p></li>
+          </ul>
+        </div>
+
+        <p class="menu-note">Disponibilidad y precios pueden variar por sucursal.</p>
+      </div>
+    </section>
+
+    <!-- ================= NEÓN ================= -->
+    <figure class="neon" aria-label="Letrero de neón en Balajú" data-reveal="neon">
+      <img src="assets/img/neon-1400.webp" srcset="assets/img/neon-700.webp 700w, assets/img/neon-1400.webp 1400w" sizes="100vw" alt="Letrero de neón sobre muro de piedra volcánica que dice: Y comieron felices para siempre" width="1400" height="1865" loading="lazy">
+    </figure>
+
+    <!-- ================= SUCURSALES ================= -->
+    <section class="sucursales" id="sucursales" aria-labelledby="suc-title">
+      <div class="wrap">
+        <h2 id="suc-title" class="split">Visítanos</h2>
+
+        <div class="branches" data-stagger style="--step: 120ms">
+          <article class="branch">
+            <img src="assets/img/suc-texcoco-700.webp" alt="Fachada de Balajú en la calle Allende, Texcoco Centro" width="700" height="928" loading="lazy">
+            <div class="branch-info">
+              <h3>Texcoco Centro</h3>
+              <address>C. Allende 306, Centro<br>56100 Texcoco de Mora, Méx.</address>
+              <div class="branch-actions">
+                <a class="btn btn-anil" href="https://maps.app.goo.gl/CzCsTo3LAVhjWbQx6" target="_blank" rel="noopener">Abrir en Google Maps</a>
+                <a class="link" href="tel:+525669896409">56 6989 6409</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="branch">
+            <img src="assets/img/suc-chiconcuac-700.webp" alt="Terraza de Balajú Chiconcuac con sombrillas" width="640" height="1138" loading="lazy">
+            <div class="branch-info">
+              <h3>Chiconcuac</h3>
+              <address>Prol. Hidalgo Sur 347, San Cristóbal<br>56280 Chiconcuac, Méx.</address>
+              <div class="branch-actions">
+                <a class="btn btn-anil" href="https://www.google.com/maps/search/?api=1&query=Balaj%C3%BA%20Prol.%20Hidalgo%20Sur%20347%20Chiconcuac" target="_blank" rel="noopener">Abrir en Google Maps</a>
+                <a class="link" href="tel:+525669896409">56 6989 6409</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="hours">
+            <h3>Abrimos todos los días</h3>
+            <p class="hours-sub">Mismo horario en las dos sucursales.</p>
+            <dl id="hoursTable">
+              <div data-days="1,2,3,4,5"><dt>Lunes a viernes</dt><dd>8:00 a 22:00</dd></div>
+              <div data-days="6,0"><dt>Sábado y domingo</dt><dd>8:30 a 22:00</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= A DOMICILIO ================= -->
+    <section class="domicilio" id="domicilio" aria-labelledby="dom-title">
+      <div class="wrap domicilio-row">
+        <div>
+          <h2 id="dom-title" class="split">¿Se te antoja en casa?</h2>
+          <p data-reveal="up">Escríbenos por WhatsApp o pide en Rappi. También estamos en Uber Eats y DiDi Food.</p>
+        </div>
+        <div class="domicilio-actions" data-stagger>
+          <a class="btn btn-azucar" href="https://wa.me/525669896409?text=Hola%20Balaj%C3%BA%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="btn btn-line" href="https://www.rappi.com.mx/restaurantes/1930464343-balaju-calle-ignacio-allende" target="_blank" rel="noopener">Pedir en Rappi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= INSTAGRAM + PIE ================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="ig-head">
+        <h2 class="split">Lo nuevo, en Instagram</h2>
+        <a class="link" href="https://www.instagram.com/restaurantebalaju/" target="_blank" rel="noopener">@restaurantebalaju</a>
+      </div>
+      <ul class="ig-grid" data-stagger>
+        <li><a href="https://www.instagram.com/restaurantebalaju/" target="_blank" rel="noopener"><img src="assets/img/ig-1-700.webp" alt="Croissant con almendras y latte de lavanda" width="700" height="933" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/restaurantebalaju/" target="_blank" rel="noopener"><img src="assets/img/ig-2-700.webp" alt="Capuchino con arte latte junto a un florero azul" width="700" height="932" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/restaurantebalaju/" target="_blank" rel="noopener"><img src="assets/img/ig-3-700.webp" alt="Piña colada con ron mexicano" width="700" height="932" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/restaurantebalaju/" target="_blank" rel="noopener"><img src="assets/img/ig-4-700.webp" alt="Croissant cubierto de crema de chocolate y avellana" width="700" height="525" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/restaurantebalaju/" target="_blank" rel="noopener"><img src="assets/img/ig-5-700.webp" alt="Sándwiches con papas a la francesa" width="700" height="700" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/restaurantebalaju/" target="_blank" rel="noopener"><img src="assets/img/ig-6-700.webp" alt="Coctel rojo junto a un florero de vidrio azul" width="700" height="932" loading="lazy"></a></li>
+      </ul>
+
+      <div class="footer-grid" data-stagger>
+        <img class="footer-logo" src="assets/logo-azucar.png" alt="Balajú" width="120" height="208" loading="lazy">
+        <div>
+          <h3>Texcoco Centro</h3>
+          <p>C. Allende 306, Centro<br>Texcoco de Mora, Méx.</p>
+        </div>
+        <div>
+          <h3>Chiconcuac</h3>
+          <p>Prol. Hidalgo Sur 347<br>San Cristóbal, Chiconcuac</p>
+        </div>
+        <div>
+          <h3>Horario</h3>
+          <p>Lunes a viernes, 8:00 a 22:00<br>Sábado y domingo, 8:30 a 22:00</p>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <p><a class="link" href="tel:+525669896409">56 6989 6409</a><br>
+          <a class="link" href="https://www.instagram.com/restaurantebalaju/" target="_blank" rel="noopener">Instagram</a>,
+          <a class="link" href="https://www.facebook.com/share/1T2kDCbrsv/" target="_blank" rel="noopener">Facebook</a></p>
+        </div>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Balajú. Sabores que cuentan historias.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/525669896409" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5.1 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
