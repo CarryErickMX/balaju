@@ -333,12 +333,21 @@ a { color: inherit; }
 
 /* ---------- A domicilio ---------- */
 .domicilio { background: var(--rosa); color: #fff; padding-block: clamp(56px, 7vw, 96px); }
-.domicilio-row { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1.6rem 3rem; }
+.domicilio-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 30rem);
+  align-items: center; gap: 3rem clamp(40px, 6vw, 96px);
+}
 .domicilio h2 { font-size: clamp(2.4rem, 5vw, 4.25rem); margin-bottom: .8rem; }
 .domicilio p { max-width: 36rem; font-size: 1.125rem; }
-.domicilio-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; }
+.domicilio-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; max-width: 26rem; margin-top: 2rem; }
 .domicilio-actions .btn-azucar { grid-column: 1 / -1; }
 .domicilio-actions .btn-app { padding-inline: .8em; }
+/* La caja grande a la derecha; la bolsa se encima abajo a la izquierda, recortada con el rosa del fondo */
+.dom-fotos { position: relative; padding: 0 0 14% 22%; }
+.dom-caja img { aspect-ratio: 4 / 5; }
+.dom-bolsa { position: absolute; left: 0; bottom: 0; width: 44%; }
+.dom-bolsa .ph-frame { border: 6px solid var(--rosa); border-radius: 22px; }
+.dom-bolsa img { aspect-ratio: 3 / 4; }
 
 /* ---------- Pie ---------- */
 .site-footer { background: var(--anil-hondo); padding-block: clamp(64px, 8vw, 112px) 40px; }
@@ -391,6 +400,8 @@ a { color: inherit; }
 }
 
 @media (max-width: 860px) {
+  .domicilio-row { grid-template-columns: 1fr; }
+  .dom-fotos { width: min(100%, 28rem); }
   .nav-toggle { display: inline-grid; place-items: center; }
   .nav {
     position: fixed; inset: var(--header) 0 auto 0;
@@ -518,6 +529,8 @@ a { color: inherit; }
     .ph-amasado img { --d: 12%; }
     .ph-muerto img { --d: 16%; }
     .ph-conchas img { --d: 9%; }
+    .dom-caja img { --d: 5%; }
+    .dom-bolsa img { --d: 12%; }
     @keyframes parallax {
       from { transform: translateY(calc(var(--d) * -1)) scale(1.2); }
       to { transform: translateY(var(--d)) scale(1.2); }
