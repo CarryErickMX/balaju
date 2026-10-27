@@ -336,7 +336,9 @@ a { color: inherit; }
 .domicilio-row { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1.6rem 3rem; }
 .domicilio h2 { font-size: clamp(2.4rem, 5vw, 4.25rem); margin-bottom: .8rem; }
 .domicilio p { max-width: 36rem; font-size: 1.125rem; }
-.domicilio-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+.domicilio-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; }
+.domicilio-actions .btn-azucar { grid-column: 1 / -1; }
+.domicilio-actions .btn-app { padding-inline: .8em; }
 
 /* ---------- Pie ---------- */
 .site-footer { background: var(--anil-hondo); padding-block: clamp(64px, 8vw, 112px) 40px; }
@@ -434,7 +436,8 @@ a { color: inherit; }
 @media (max-width: 560px) {
   body { font-size: 1rem; }
   .hero-actions, .domicilio-actions { width: 100%; }
-  .hero-actions .btn, .domicilio-actions .btn { flex: 1 1 100%; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .domicilio-actions .btn-app { padding-inline: .5em; }
   .branch, .hours { grid-column: 1 / -1; }
   .dishes { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }

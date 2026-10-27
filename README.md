@@ -43,7 +43,7 @@ Los hooks automáticos de Impeccable no están activados y su binario no se ha e
 - **Dirección de Chiconcuac**: viene de su ficha en Rappi (Prol. Hidalgo Sur 347, San Cristóbal, 56280).
 - **Foto de Chiconcuac**: se usó una terraza con sombrillas que parece ser esa sucursal; confirmar.
 - **Menú**: platillos de sus menús en Rappi y de los nombres que aparecen en sus publicaciones; sin precios a propósito.
-- **Enlaces de Uber Eats y DiDi Food**: solo se mencionan; agregar sus ligas directas si las tienen.
+- **Plataformas de entrega**: Rappi y Uber Eats enlazan a la tienda de Texcoco Centro (Uber Eats también tiene Chiconcuac). DiDi Food lleva a su página general; cambiar por la liga directa de Balajú. Los botones van con texto: los logos oficiales se piden a cada plataforma desde su portal de aliados.
 
 El horario (L–V 8:00–22:00, S–D 8:30–22:00) está confirmado por su publicación "Nuevo horario".
 
