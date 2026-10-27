@@ -334,7 +334,7 @@ a { color: inherit; }
 /* ---------- A domicilio ---------- */
 .domicilio { background: var(--rosa); color: #fff; padding-block: clamp(56px, 7vw, 96px); }
 .domicilio-row {
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 30rem);
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 27rem);
   align-items: center; gap: 3rem clamp(40px, 6vw, 96px);
 }
 .domicilio h2 { font-size: clamp(2.4rem, 5vw, 4.25rem); margin-bottom: .8rem; }
@@ -343,11 +343,11 @@ a { color: inherit; }
 .domicilio-actions .btn-azucar { grid-column: 1 / -1; }
 .domicilio-actions .btn-app { padding-inline: .8em; }
 /* La caja grande a la derecha; la bolsa se encima abajo a la izquierda, recortada con el rosa del fondo */
-.dom-fotos { position: relative; padding: 0 0 14% 22%; }
-.dom-caja img { aspect-ratio: 4 / 5; }
-.dom-bolsa { position: absolute; left: 0; bottom: 0; width: 44%; }
+.dom-fotos { position: relative; padding: 0 0 12% 20%; }
+.dom-caja img { aspect-ratio: 4 / 3; object-position: 50% 80%; }
+.dom-bolsa { position: absolute; left: 0; bottom: 0; width: 36%; }
 .dom-bolsa .ph-frame { border: 6px solid var(--rosa); border-radius: 22px; }
-.dom-bolsa img { aspect-ratio: 3 / 4; }
+.dom-bolsa img { aspect-ratio: 1; object-position: 50% 55%; }
 
 /* ---------- Pie ---------- */
 .site-footer { background: var(--anil-hondo); padding-block: clamp(64px, 8vw, 112px) 40px; }
@@ -401,7 +401,7 @@ a { color: inherit; }
 
 @media (max-width: 860px) {
   .domicilio-row { grid-template-columns: 1fr; }
-  .dom-fotos { width: min(100%, 28rem); }
+  .dom-fotos { width: min(100%, 27rem); }
   .nav-toggle { display: inline-grid; place-items: center; }
   .nav {
     position: fixed; inset: var(--header) 0 auto 0;
