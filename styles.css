@@ -359,17 +359,26 @@ a { color: inherit; }
 .footer-grid p { color: var(--lavanda); font-size: .98rem; }
 .copy { margin-top: 48px; color: var(--lavanda); font-size: .9rem; }
 
-/* ---------- WhatsApp flotante ---------- */
-.wa-float {
+/* ---------- Redes y WhatsApp flotantes ---------- */
+.social-float {
   position: fixed; right: 16px; bottom: 16px; z-index: 60;
-  width: 54px; height: 54px; border-radius: 50%;
-  display: grid; place-items: center;
-  background: #25d366; color: #fff;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+}
+.sf, .wa-float {
+  display: grid; place-items: center; border-radius: 50%;
   box-shadow: 0 10px 24px -8px rgb(5 3 40 / .55);
   transition: transform .12s var(--ease-out);
 }
-.wa-float:active { transform: scale(.94); }
+.sf { width: 44px; height: 44px; background: var(--azucar); }
+.sf svg { width: 22px; height: 22px; }
+.sf-fb { color: #1877f2; }
+.sf-fb svg { fill: currentColor; }
+.wa-float { width: 54px; height: 54px; background: #25d366; color: #fff; }
 .wa-float svg { width: 28px; height: 28px; fill: currentColor; }
+.sf:active, .wa-float:active { transform: scale(.94); }
+@media (hover: hover) and (pointer: fine) {
+  .sf:hover, .wa-float:hover { transform: translateY(-2px); }
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
